@@ -12,17 +12,12 @@ This repository contains code to train a model for classifying chest X-ray image
 
 The dataset used for this project is the [Chest X-Ray Images (Pneumonia) dataset](https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray).
 
-## Download and Prepare Dataset
+## Prepare Dataset
 
-1. Download the dataset
-wget -O downloaded_file.zip "https://data.mendeley.com/public-files/datasets/rscbjbr9sj/files/f12eaf6d-6023-432f-acc9-80c9d7393433/file_downloaded"
-
-2. Unzip the dataset
-unzip downloaded_file.zip -d /content/data
-
-3. Verify the dataset structure
+Verify the dataset structure
 Make sure your dataset is organized as follows:
-/data/chest_xray
+
+    /data/chest_xray
     ├── train
     │   ├── NORMAL
     │   ├── PNEUMONIA
@@ -34,7 +29,16 @@ If your dataset structure is different, adjust the --data_dir argument according
 
 # Training
 To train the model, use the following command:
-python train.py --bsz 64 --lr 0.0005 --niter 50 --layers 101 --data_dir /content/data/chest_xray --logpath log
+
+> ```bash
+> python train.py --bsz 64
+>                 --lr 1e-4
+>                 --niter 50
+>                 -layers {50,101}
+>                 --data_dir /content/data/chest_xray
+>                 --logpath "your_experiment_name"
+> ```
+
 
 ## Arguments
 
