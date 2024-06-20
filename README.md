@@ -35,7 +35,7 @@ To train the model, use the following command:
 >                 --lr 1e-4
 >                 --niter 50
 >                 -layers {50,101}
->                 --data_dir /content/data/chest_xray
+>                 --data_dir data/chest_xray
 >                 --logpath "your_experiment_name"
 > ```
 
