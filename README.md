@@ -42,10 +42,12 @@ To train the model, use the following command:
 
 ## Arguments
 
---bsz: Batch size for training (default: 32)
---lr: Learning rate for optimizer (default: 0.001)
---niter: Number of training iterations (epochs) (default: 30)
---layers: Number of layers in ResNet backbone (e.g., 50 or 101) (default: 50)
---data_dir: Directory where the dataset is located (default: ./data)
---logpath: Directory to save the best model checkpoint (default: log)
+> ```bash
+> --bsz: Batch size for training (default: 32)
+> --lr: Learning rate for optimizer (default: 0.001)
+> --niter: Number of training iterations (epochs) (default: 30)
+> --layers: Number of layers in ResNet backbone (e.g., 50 or 101) (default: 50)
+> --data_dir: Directory where the dataset is located (default: ./data)
+> --logpath: Directory to save the best model checkpoint (default: log)
+> ```
 
