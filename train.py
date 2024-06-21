@@ -124,10 +124,10 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train MSR model with ResNet backbone on Pneumonia dataset")
     parser.add_argument('--bsz', type=int, default=32, help='Batch size for training')
-    parser.add_argument('--lr', type=float, default=1e-3, help='Learning rate for optimizer')
+    parser.add_argument('--lr', type=float, default=1e-4, help='Learning rate for optimizer')
     parser.add_argument('--niter', type=int, default=30, help='Number of training iterations (epochs)')
     parser.add_argument('--layers', type=int, default=50, help='Number of layers in ResNet backbone (e.g., 50 or 101)')
-    parser.add_argument('--data_dir', type=str, default='./data', help='Directory where dataset is located')
+    parser.add_argument('--data_dir', type=str, default='.data/chest_xray', help='Directory where dataset is located')
     parser.add_argument('--logpath', type=str, default='log', help='Directory to save the best model checkpoint')
     
     args = parser.parse_args()
