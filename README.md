@@ -17,7 +17,7 @@ The dataset used for this project is the [Chest X-Ray Images (Pneumonia) dataset
 Verify the dataset structure
 Make sure your dataset is organized as follows:
                             
-        ../                      
+    ../                      
     ├── common/             
     ├── data/               
     |   ├── dataloader.py
@@ -45,7 +45,7 @@ To train the model, use the following command:
 
 > ```bash
 > python train.py --bsz 64
->                 --lr 1e-3
+>                 --lr 1e-5
 >                 --niter 30
 >                 -layers {50,101}
 >                 --data_dir data/chest_xray
@@ -66,7 +66,7 @@ To test the model, use the following command:
 ## Arguments
 
 - `--bsz`: Batch size for training. Default: `32`
-- `--lr`: Learning rate for the optimizer. Default: `0.001`
+- `--lr`: Learning rate for the optimizer. Default: `0.00001`
 - `--niter`: Number of training iterations (epochs). Default: `30`
 - `--layers`: Number of layers in the ResNet backbone (e.g., 50 or 101). Default: `50`
 - `--data_dir`: Directory where the dataset is located. Default: `.data/chest_xray`
