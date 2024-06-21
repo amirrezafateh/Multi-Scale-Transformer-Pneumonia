@@ -67,11 +67,6 @@ class MSR(nn.Module):
     def forward(self, x):
         # Backbone feature extraction
         back_x = self.backbone(x)
-        #x = self.avgpool(back_x['3'])  # AdaptiveAvgPool the output of layer '3'
-        #print(back_x['1'].shape)
-        #print(back_x['2'].shape)
-        #print(back_x['3'].shape)
-        #print(x.shape)
 
         red_back_1 = self.conv_red_1(back_x['1'])
         avg_back_1 = self.avgpool(red_back_1)
