@@ -21,13 +21,13 @@ Make sure your dataset is organized as follows:
     ├── common/             
     ├── data/               
     |   ├── dataloader.py
-    |   ├── chest_xray/
-    │   |   ├── train
-    │   │   ├── NORMAL
-    │   │   ├── PNEUMONIA
-    │   └── test
-    │       ├── NORMAL
-    │       └── PNEUMONIA
+    |   └── chest_xray/
+    │       ├── train/
+    │       │   ├── NORMAL
+    │       |   └── PNEUMONIA
+    │       └── test/
+    │           ├── NORMAL
+    │           └── PNEUMONIA
     ├── model/
     |   ├── MSR.py
     |   ├── backbone_utils.py
