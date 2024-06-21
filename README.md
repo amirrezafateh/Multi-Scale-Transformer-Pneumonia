@@ -33,7 +33,7 @@ To train the model, use the following command:
 > ```bash
 > python train.py --bsz 64
 >                 --lr 1e-4
->                 --niter 50
+>                 --niter 30
 >                 -layers {50,101}
 >                 --data_dir data/chest_xray
 >                 --logpath "your_experiment_name"
@@ -43,9 +43,9 @@ To train the model, use the following command:
 ## Arguments
 
 - `--bsz`: Batch size for training. Default: `32`
-- `--lr`: Learning rate for the optimizer. Default: `0.001`
+- `--lr`: Learning rate for the optimizer. Default: `0.0001`
 - `--niter`: Number of training iterations (epochs). Default: `30`
 - `--layers`: Number of layers in the ResNet backbone (e.g., 50 or 101). Default: `50`
-- `--data_dir`: Directory where the dataset is located. Default: `./data`
+- `--data_dir`: Directory where the dataset is located. Default: `.data/chest_xray`
 - `--logpath`: Directory to save the best model checkpoint. Default: `log`
 
