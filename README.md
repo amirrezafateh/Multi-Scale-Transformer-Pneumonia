@@ -39,6 +39,16 @@ To train the model, use the following command:
 >                 --logpath "your_experiment_name"
 > ```
 
+# Testing
+To test the model, use the following command:
+
+> ```bash
+> python test.py  --bsz 64
+>                 -layers {50,101}
+>                 --data_dir data/chest_xray
+>                 --logpath "your_experiment_name"
+> ```
+
 
 ## Arguments
 
