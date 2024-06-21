@@ -16,14 +16,27 @@ The dataset used for this project is the [Chest X-Ray Images (Pneumonia) dataset
 
 Verify the dataset structure
 Make sure your dataset is organized as follows:
+                            
+        ../                      
+    ├── common/             
+    ├── data/               
+    |   ├── dataloader.py
+    |   ├── chest_xray/
+    │   |   ├── train
+    │   │   ├── NORMAL
+    │   │   ├── PNEUMONIA
+    │   └── test
+    │       ├── NORMAL
+    │       └── PNEUMONIA
+    ├── model/
+    |   ├── MSR.py
+    |   ├── backbone_utils.py
+    |   └── transformer.py
+    ├── README.md           
+    ├── train.py            
+    └── test.py             
+    
 
-    /data/chest_xray
-    ├── train
-    │   ├── NORMAL
-    │   ├── PNEUMONIA
-    └── test
-        ├── NORMAL
-        ├── PNEUMONIA
 
 If your dataset structure is different, adjust the --data_dir argument accordingly.
 
