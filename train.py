@@ -53,6 +53,7 @@ def validate(model, val_loader, criterion, device):
             inputs, targets = inputs.to(device), targets.to(device)
 
             outputs = model(inputs)
+            
             loss = criterion(outputs, targets)
 
             running_loss += loss.item()
