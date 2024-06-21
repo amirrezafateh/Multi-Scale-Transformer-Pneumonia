@@ -1,6 +1,9 @@
 # Pneumonia Chest X-ray Classification with MSR Model
+This is the implementation of the paper "CPneumonia Chest X-ray Classification with MSR Model" by...
 
-This repository contains code to train a model for classifying chest X-ray images into normal or pneumonia using a ResNet backbone.
+<p align="middle">
+    <img src="data/overview.png">
+</p>
 
 ## Requirements
 
