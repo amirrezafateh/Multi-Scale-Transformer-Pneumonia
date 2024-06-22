@@ -1,5 +1,5 @@
-# Pneumonia Chest X-ray Classification with MSR Model
-This is the implementation of the paper "CPneumonia Chest X-ray Classification with MSR Model" by...
+# Pneumonia Chest X-ray Classification with Multi-Scale Transformer
+This is the implementation of the paper "Pneumonia Chest X-ray Classification with Multi-Scale Transformer" by...
 
 <p align="middle">
     <img src="data/overview.png">
