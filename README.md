@@ -7,9 +7,12 @@ This is the implementation of the paper "CPneumonia Chest X-ray Classification w
 
 ## Requirements
 
-- Python 3.10
-- PyTorch
-- torchvision
+- Python 3.8.18
+- PyTorch 1.8.1
+- cuda 11.5
+- tensorboard 2.12.1
+- numpy 1.22.3
+- sklearn 1.3
 
 # Dataset
 
