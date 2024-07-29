@@ -43,7 +43,7 @@ Make sure your dataset is organized as follows:
     │   │       ├── COVID19
     │   │       ├── NORMAL
     │   │       └── PNEUMONIA
-    │   └── Chest Xray Masks and Labels/
+    │   └── Chest_Xray_Masks_and_Labels/
     │       ├── train/
     │       │   ├── images
     │       |   └── masks
@@ -61,36 +61,82 @@ Make sure your dataset is organized as follows:
 
 
 If your dataset structure is different, adjust the --data_dir argument accordingly.
+# Segmentation Task
 
-# Training
+## Training
 To train the model, use the following command:
 
 > ```bash
-> python train.py --bsz 64
->                 --lr 1e-5
->                 --niter 30
->                 -layers {50,101}
->                 --data_dir data/chest_xray
->                 --logpath "your_experiment_name"
+> python train_seg.py --bsz 8
+>                     --lr 1e-3
+>                     --niter 30
+>                     --data_dir data/Chest_Xray_Masks_and_Labels
+>                     --logpath "your_experiment_name"
 > ```
 
-# Testing
+## Testing
 To test the model, use the following command:
 
 > ```bash
-> python test.py  --bsz 64
->                 -layers {50,101}
->                 --data_dir data/chest_xray
+> python test_seg.py  --bsz 8
+>                 --data_dir data/Chest_Xray_Masks_and_Labels
 >                 --logpath "your_experiment_name"
 > ```
 
+# Classification Task (Kermany)
+
+## Training
+To train the model, use the following command:
+
+> ```bash
+> python train_kermany.py --bsz 64
+>                         --lr 5e-5
+>                         --niter 100
+>                         --layers {50,101}
+>                         --data_dir data/Kermany
+>                         --logpath "your_experiment_name"
+> ```
+
+## Testing
+To test the model, use the following command:
+
+> ```bash
+> python test_kermany.py  --bsz 64
+>                         --layers {50,101}
+>                         --data_dir data/Kermany
+>                         --logpath "your_experiment_name"
+> ```
+
+# Classification Task (Cohen)
+
+## Training
+To train the model, use the following command:
+
+> ```bash
+> python train_cohen.py --bsz 64
+>                       --lr 5e-5
+>                       --niter 100
+>                       --layers {50,101}
+>                       --data_dir data/Kermany
+>                       --logpath "your_experiment_name"
+> ```
+
+## Testing
+To test the model, use the following command:
+
+> ```bash
+> python test_cohen.py  --bsz 64
+>                       --layers {50,101}
+>                       --data_dir data/Kermany
+>                       --logpath "your_experiment_name"
+> ```
 
 ## Arguments
 
-- `--bsz`: Batch size for training. Default: `32`
-- `--lr`: Learning rate for the optimizer. Default: `0.00001`
-- `--niter`: Number of training iterations (epochs). Default: `30`
-- `--layers`: Number of layers in the ResNet backbone (e.g., 50 or 101). Default: `50`
-- `--data_dir`: Directory where the dataset is located. Default: `.data/chest_xray`
-- `--logpath`: Directory to save the best model checkpoint. Default: `log`
+- `--bsz`: Batch size for training.
+- `--lr`: Learning rate for the optimizer.
+- `--niter`: Number of training iterations (epochs). 
+- `--layers`: Number of layers in the ResNet backbone (e.g., 50 or 101). 
+- `--data_dir`: Directory where the dataset is located. 
+- `--logpath`: Directory to save the best model checkpoint. 
 
