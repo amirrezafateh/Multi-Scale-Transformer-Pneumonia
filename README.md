@@ -55,8 +55,12 @@ Make sure your dataset is organized as follows:
     |   ├── backbone_utils.py
     |   └── transformer.py
     ├── README.md           
-    ├── train.py           
-    └── test.py             
+    ├── train_Cohen.py
+    ├── train_Kermany.py
+    ├── train_seg.py
+    ├── test_Cohen.py
+    ├── test_Kermany.py
+    └── test_seg.py             
     
 
 
