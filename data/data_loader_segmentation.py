@@ -82,4 +82,3 @@ def get_data_loader(data_dir, batch_size):
 
     return train_loader, test_loader
 
-
