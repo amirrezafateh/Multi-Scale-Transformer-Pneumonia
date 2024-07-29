@@ -27,19 +27,35 @@ Make sure your dataset is organized as follows:
     ├── common/             
     ├── data/               
     |   ├── dataloader.py
-    |   └── chest_xray/
+    |   ├── Kermany/
+    │   |   ├── train/
+    │   |   │   ├── NORMAL
+    │   |   |   └── PNEUMONIA
+    │   |   └── test/
+    │   |       ├── NORMAL
+    │   |       └── PNEUMONIA
+    |   ├── Cohen/
+    │   │   ├── train/
+    │   │   │   ├── COVID19
+    │   │   │   ├── NORMAL
+    │   │   |   └── PNEUMONIA
+    │   │   └── test/
+    │   │       ├── COVID19
+    │   │       ├── NORMAL
+    │   │       └── PNEUMONIA
+    │   └── Chest Xray Masks and Labels/
     │       ├── train/
-    │       │   ├── NORMAL
-    │       |   └── PNEUMONIA
+    │       │   ├── images
+    │       |   └── masks
     │       └── test/
-    │           ├── NORMAL
-    │           └── PNEUMONIA
+    │           ├── images
+    │           └── masks
     ├── model/
     |   ├── MSR.py
     |   ├── backbone_utils.py
     |   └── transformer.py
     ├── README.md           
-    ├── train.py            
+    ├── train.py           
     └── test.py             
     
 
