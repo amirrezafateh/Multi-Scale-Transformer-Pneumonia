@@ -1,6 +1,6 @@
 
 # Pneumonia Chest X-ray Classification with Multi-Scale Transformer
-This is the implementation of the paper "Pneumonia Chest X-ray Classification with Multi-Scale Transformer" by...
+This is the implementation of the paper "Pneumonia Chest X-ray Classification with Multi-Scale Transformer" 
 
 <p align="middle">
     <img src="data/overview.png">
@@ -17,7 +17,10 @@ This is the implementation of the paper "Pneumonia Chest X-ray Classification wi
 
 # Dataset used
 
-The datasets used for this project are the [Kermany (Chest X-Ray Images (Pneumonia)) dataset](https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray), [Cohen (COVID-19 image data collection) dataset](https://github.com/ieee8023/covid-chestxray-dataset), and [Chest Xray Masks and Labels dataset](https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels)
+The datasets used for this project are:
+[Kermany (Chest X-Ray Images (Pneumonia)) dataset](https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray)
+[Cohen (COVID-19 image data collection) dataset](https://github.com/ieee8023/covid-chestxray-dataset)
+[Chest Xray Masks and Labels dataset](https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels)
 ## Prepare Dataset
 
 Verify the dataset structure
