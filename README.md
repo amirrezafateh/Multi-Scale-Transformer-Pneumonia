@@ -15,7 +15,7 @@ This is the implementation of the paper "Pneumonia Chest X-ray Classification wi
 - numpy 1.22.3
 - sklearn 1.3
 
-# Dataset
+# Dataset used
 
 The dataset used for this project is the [Chest X-Ray Images (Pneumonia) dataset](https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray).
 
