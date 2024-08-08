@@ -17,8 +17,7 @@ This is the implementation of the paper "Pneumonia Chest X-ray Classification wi
 
 # Dataset used
 
-The dataset used for this project is the [Chest X-Ray Images (Pneumonia) dataset](https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray).
-
+The datasets used for this project are the [Kermany (Chest X-Ray Images (Pneumonia)) dataset](https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray), [Cohen (COVID-19 image data collection) dataset](https://github.com/ieee8023/covid-chestxray-dataset), and [Chest Xray Masks and Labels dataset](https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels)
 ## Prepare Dataset
 
 Verify the dataset structure
