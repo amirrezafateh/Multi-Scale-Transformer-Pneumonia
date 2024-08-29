@@ -1,4 +1,4 @@
-
+  
 # Efficient and Accurate Pneumonia Detection Using a Novel Multi-Scale Transformer Approach
 This is the implementation of the paper "Efficient and Accurate Pneumonia Detection Using a Novel Multi-Scale Transformer Approach" 
 
