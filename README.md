@@ -147,11 +147,12 @@ To test the model, use the following command:
 - `--data_dir`: Directory where the dataset is located. 
 - `--logpath`: Directory to save the best model checkpoint. 
 
-## Cite
-if you used this repository, cite to this paper:
+## Citation
+If you use this repository in your work, please cite the following paper:
 @article{saber2024efficient,
   title={Efficient and Accurate Pneumonia Detection Using a Novel Multi-Scale Transformer Approach},
   author={Saber, Alireza and Parhami, Pouria and Siahkarzadeh, Alimihammad and Fateh, Amirreza},
   journal={arXiv preprint arXiv:2408.04290},
   year={2024}
 }
+
