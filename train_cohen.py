@@ -79,7 +79,7 @@ def main(args):
     train_loader, val_loader = get_data_loader(args.data_dir, args.bsz)
 
     # Instantiate the MSR model
-    model = MSR(layers=args.layers, num_classes=3)  # Binary classification for Pneumonia dataset
+    model = MSR(layers=args.layers, num_classes=3)  
 
     # Print the number of parameters
     total_params = count_parameters(model)
