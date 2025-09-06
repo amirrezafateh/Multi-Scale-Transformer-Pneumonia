@@ -37,9 +37,9 @@ class SpatialAttention(nn.Module):
         attention = self.sigmoid(self.conv(concat))
         return attention
 
-class CBAM(nn.Module):
+class CRAM(nn.Module):
     def __init__(self, in_channels, reduction_ratio=16, kernel_size=7):
-        super(CBAM, self).__init__()
+        super(CRAM, self).__init__()
         self.channel_att = ChannelAttention(in_channels, reduction_ratio)
         self.spatial_att = SpatialAttention(kernel_size)
 
@@ -51,7 +51,7 @@ class CBAM(nn.Module):
 class FeatureEnhancementBlock(nn.Module):
     def __init__(self, in_channels, out_channels):
         super(FeatureEnhancementBlock, self).__init__()
-        self.cbam = CBAM(in_channels)
+        self.cram = CRAM(in_channels)
         self.residual = nn.Sequential(
             nn.Conv2d(in_channels, out_channels, kernel_size=3, padding=1),
             nn.BatchNorm2d(out_channels),
@@ -62,7 +62,7 @@ class FeatureEnhancementBlock(nn.Module):
         
     def forward(self, x):
         residual = self.residual(x)
-        x = self.cbam(x)
+        x = self.cram(x)
         return x + residual
 
 class MSR(nn.Module):
