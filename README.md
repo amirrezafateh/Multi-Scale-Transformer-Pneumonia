@@ -112,7 +112,7 @@ To test the model, use the following command:
 > ```bash
 > python test_kermany.py  --bsz 64
 >                         --layers {50,101}
->                         --data_dir data/Kermany
+>                         --data_dir data/Cohen
 >                         --logpath "your_experiment_name"
 > ```
 
@@ -126,7 +126,7 @@ To train the model, use the following command:
 >                       --lr 5e-5
 >                       --niter 100
 >                       --layers {50,101}
->                       --data_dir data/Kermany
+>                       --data_dir data/Cohen
 >                       --logpath "your_experiment_name"
 > ```
 
