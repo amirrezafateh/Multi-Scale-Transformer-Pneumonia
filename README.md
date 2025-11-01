@@ -22,7 +22,7 @@ For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2408
 The datasets used for this project are:
 - [Kermany (Chest X-Ray Images (Pneumonia)) dataset](https://www.kaggle.com/datasets/andrewmvd/pediatric-pneumonia-chest-xray)
 - [Cohen (COVID-19 image data collection) dataset github](https://github.com/ieee8023/covid-chestxray-dataset)
-- [Cohen (COVID-19 image data collection) dataset kaggle]([https://github.com/ieee8023/covid-chestxray-dataset](https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia))
+- [Cohen (COVID-19 image data collection) dataset Kaggle](https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia)
 - [Chest Xray Masks and Labels dataset](https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels)
 ## Prepare Dataset
 
