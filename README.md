@@ -2,7 +2,7 @@
 # Efficient and Accurate Pneumonia Detection Using a Novel Multi-Scale Transformer Approach
 This is the implementation of the paper "Efficient and Accurate Pneumonia Detection Using a Novel Multi-Scale Transformer Approach" 
 
-For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2408.04290)].
+[![Journal](https://img.shields.io/badge/Sensors-Published-success)](https://doi.org/10.3390/s25237233)
 
 <p align="middle">
     <img src="data/overview.png">
