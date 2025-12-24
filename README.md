@@ -153,10 +153,14 @@ To test the model, use the following command:
 ## Citation
 If you use this repository in your work, please cite the following paper:
 ```bibtex
-@article{saber2024efficient,
-  title={Efficient and Accurate Pneumonia Detection Using a Novel Multi-Scale Transformer Approach},
-  author={Saber, Alireza and Parhami, Pouria and Siahkarzadeh, Alimihammad and Fateh, Amirreza},
-  journal={arXiv preprint arXiv:2408.04290},
-  year={2024}
+@article{saber2025efficient,
+  title={Efficient and accurate pneumonia detection using a novel multi-scale transformer approach},
+  author={Saber, Alireza and Fateh, Amirreza and Parhami, Pouria and Siahkarzadeh, Alimohammad and Fateh, Mansoor and Ferdowsi, Saideh},
+  journal={Sensors},
+  volume={25},
+  number={23},
+  pages={7233},
+  year={2025},
+  publisher={MDPI}
 }
 
